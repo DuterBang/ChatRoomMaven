@@ -83,6 +83,7 @@ public class ClientTCPHandler {
                         break;
                     }
                     // 通知到ServerByTCP，由ServerByTCP来进行打印client的信息以及接收到的消息
+                    //ClientTCPHandler.this代表把自身传递回去,同时把收到的消息str传递回去
                     clientTCPHandlerCallback.onNewMessageArrived(ClientTCPHandler.this, str);
                 }
 

@@ -42,6 +42,7 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
         if (clientTCPListener!=null){
             clientTCPListener.exit();
         }
+        //保证线程安全,因为既有遍历,又有clientTCPHandlers.remove(clientTCPHandler);但线程无法保证安全
         synchronized (ServerByTCP.this){
             for (ClientTCPHandler clientTCPHandler : clientTCPHandlers) {
                 clientTCPHandler.exit();
@@ -51,7 +52,7 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
         }
     }
 
-
+    //synchronized加在方法上,默认同步的就是当前的实例,即ServerByTCP.this
     public synchronized void LinkWithEachClient(String str) {
         for (ClientTCPHandler clientTCPHandler : clientTCPHandlers) {
             clientTCPHandler.send(str);
@@ -107,7 +108,7 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
                 }
                 // 读取数据并打印
                 clientTCPHandler.readAndPrint();
-                // 添加同步处理
+                // 添加时保证线程安全
                 synchronized (ServerByTCP.this) {
                     clientTCPHandlers.add(clientTCPHandler);
                 }
