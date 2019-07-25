@@ -42,7 +42,7 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
         if (clientTCPListener!=null){
             clientTCPListener.exit();
         }
-        //保证线程安全,因为既有遍历,又有clientTCPHandlers.remove(clientTCPHandler);但线程无法保证安全
+        //保证线程安全,因为既有遍历,又有clientTCPHandlers.remove(clientTCPHandler);
         synchronized (ServerByTCP.this){
             for (ClientTCPHandler clientTCPHandler : clientTCPHandlers) {
                 clientTCPHandler.exit();
