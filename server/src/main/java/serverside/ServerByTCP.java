@@ -8,14 +8,19 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
     private final int port;
     private ClientTCPListener clientTCPListener;
     private List<ClientTCPHandler> clientTCPHandlers = new ArrayList<>();
+    private final ExecutorService forwardingThreadPoolExecutor;
 
 
     public ServerByTCP(int serverTcpPort) {
         this.port=serverTcpPort;
+        this.forwardingThreadPoolExecutor= Executors.newSingleThreadExecutor();
     }
 
     public boolean start() {
@@ -50,6 +55,10 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
             //清空列表
             clientTCPHandlers.clear();
         }
+
+        // 停止线程池
+        forwardingThreadPoolExecutor.shutdownNow();
+
     }
 
     //synchronized加在方法上,默认同步的就是当前的实例,即ServerByTCP.this
@@ -67,8 +76,29 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
     }
 
     @Override
-    public void onNewMessageArrived(ClientTCPHandler clientTCPHandler, String msg) {
-        System.out.println("服务器TCP收到客户端："+clientTCPHandler.getClientInfo()+"消息:"+msg);
+    public void onNewMessageArrived( final ClientTCPHandler Handler,final String msg) {
+        System.out.println("服务器TCP收到客户端："+Handler.getClientInfo()+"消息:"+msg);
+        //为了不让打印消息阻塞在这里(onNewMessageArrived函数中),使用线程池异步来转发消息
+        //异步提交转发任务
+
+
+        forwardingThreadPoolExecutor.execute(() -> {
+            synchronized (ServerByTCP.this) {
+                for (ClientTCPHandler tcpHandler : clientTCPHandlers) {
+                    if (tcpHandler==Handler){
+                        //跳过自身,不需要给自己转发
+                        continue;
+                    }
+                    //向其他客户端发送消息
+                    //转发任务投递到writerHandler中的线程池中,所以这里不会阻塞,在writerHandler中的线程池中异步转发
+                    tcpHandler.send(msg);
+                }
+            }
+
+
+        });
+
+
     }
 
 
@@ -83,7 +113,7 @@ public class ServerByTCP implements ClientTCPHandler.ClientTCPHandlerCallback {
         @Override
         public void run() {
             super.run();
-            System.out.println("服务器TCP端口开始监听");
+            System.out.println("服务器TCP端口开始监听!");
 
             //得到客户端连接
             Socket client;

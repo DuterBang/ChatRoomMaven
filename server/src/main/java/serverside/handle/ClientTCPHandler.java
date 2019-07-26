@@ -36,6 +36,7 @@ public class ClientTCPHandler {
     }
 
     public void send(String str) {
+
         //ClientWriteHandler使用线程池
         writeHandler.write(str);
     }
@@ -117,6 +118,10 @@ public class ClientTCPHandler {
 
 
         public void write(String writeStr) {
+            //若是此时客户端已经断开了,直接返回
+            if (done){
+                return;
+            }
             executorService.execute(new WriteRunnable(writeStr));
         }
 

@@ -7,7 +7,30 @@ import java.io.*;
 import java.net.*;
 
 public class ClientByTCP {
-    public static void LinkWith(ServerInfo serverInfo) throws IOException {
+    //将ClientByTCP 实例化,以便于外部可控,可调用
+
+    private final Socket socket;
+    private final ClientTCPHandler readHandler;
+    private final PrintStream printStream;
+
+    public ClientByTCP(Socket socket, ClientTCPHandler readHandler) throws IOException {
+        this.socket = socket;
+        this.readHandler = readHandler;
+        printStream=new PrintStream(socket.getOutputStream());
+    }
+
+    public void exit() {
+        readHandler.exit();
+        CloseUtils.close(printStream);
+        CloseUtils.close(socket);
+    }
+
+
+    public void send(String msg) {
+        printStream.println(msg);
+    }
+
+    public static ClientByTCP startWith(ServerInfo serverInfo) throws IOException {
         Socket socket = new Socket();
         //连接超时时间
         socket.setSoTimeout(6000);
@@ -25,49 +48,31 @@ public class ClientByTCP {
         try {
             //在clientTCPHandler线程中，从socket的InputStream读取数据
             ClientTCPHandler clientTCPHandler=new ClientTCPHandler(socket.getInputStream());
-            Thread clientTCPReadThread = new Thread(clientTCPHandler);
-            clientTCPReadThread.start();
 
-            //客户端读取键盘一行，向服务器写数据
-            write(socket);
-            //退出操作
-            clientTCPHandler.exit();
+            clientTCPHandler.start();
+
+
+
+            /**由键盘输入改为自动输入
+             *             //客户端读取键盘一行，向服务器写数据
+             *             write(socket);
+             *             //退出操作
+             *             clientTCPHandler.exit();
+             */
+
+            return new ClientByTCP(socket,clientTCPHandler);
+
 
         } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("异常关闭");
-        }finally {
-            socket.close();
-            System.out.println("socket连接断开");
-        }
 
+            System.out.println("连接异常关闭");
+        }
+        return null;
     }
 
-    private static void write(Socket socket) throws IOException {
-        // 构建键盘输入流
-        InputStream in = System.in;
-        BufferedReader keymapInput = new BufferedReader(new InputStreamReader(in));
 
-        //得到Socket输出流，并转换为打印流
-        OutputStream outputStream = socket.getOutputStream();
-        PrintStream socketPrintStream = new PrintStream(outputStream);
 
-        while(true) {
-            // 键盘读取一行
-            String str = keymapInput.readLine();
-            // 发送到服务器
-            socketPrintStream.println(str);
-
-            if ("byebyelj".equalsIgnoreCase(str)) {
-                break;
-            }
-        }
-
-        socketPrintStream.close();
-
-    }
-
-    private static class ClientTCPHandler implements Runnable{
+    private static class ClientTCPHandler extends Thread{
         private boolean done=false;
         private final InputStream inputStream;
 

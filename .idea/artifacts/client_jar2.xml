@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="client:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/client_jar2</output-path>
+    <root id="root">
+      <element id="archive" name="client.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/client/src/main/webapp/ClientForceTest/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="client" />
+        <element id="module-output" name="utils" />
+        <element id="module-output" name="constants" />
+      </element>
+    </root>
+  </artifact>
+</component>

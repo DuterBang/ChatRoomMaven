@@ -159,7 +159,7 @@ public class ClientSearcher {
                     //校验接收到的reveiveBuffer
                     boolean isValid = (dataLen >= minLen) && (ByteUtils.startsWith(data, UDPParas.HEADER));
 
-                    System.out.println("3-1客户端收到广播消息，来自服务器 ip:"+ip+"\tport:"+port+" \tdataVaild"+isValid);
+                    System.out.println("3-1客户端收到广播消息，来自服务器 ip: "+ip+"\tport: "+port+" \tdataVaild: "+isValid);
 
                     if(!isValid){
                         continue;

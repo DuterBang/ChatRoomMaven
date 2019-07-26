@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="client:jar2" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2e6ac292-8be9-43f2-9485-144f150f50eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/client_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/client_jar2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/server_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/clientside/ClientForceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/webapp/ClientForceTest/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/clientside/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/clientside/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP$ClientTCPHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP$ClientTCPHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientByTCP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher$Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/ClientSearcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/clientside/bean/ServerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/clientside/bean/ServerInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/target/classes/cons/TCPParas.class" beforeDir="false" afterPath="$PROJECT_DIR$/constants/target/classes/cons/TCPParas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/target/classes/cons/UDPParas.class" beforeDir="false" afterPath="$PROJECT_DIR$/constants/target/classes/cons/UDPParas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/serverside/ServerByTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/serverside/ServerByTCP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP$ClientTCPListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP$ClientTCPListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/ServerByTCP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/ServerProvider$ServerUDPProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/ServerProvider$ServerUDPProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/ServerProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/ServerProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientReadHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientReadHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientTCPHandlerCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientTCPHandlerCallback.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientWriteHandler$WriteRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientWriteHandler$WriteRunnable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientWriteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler$ClientWriteHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/serverside/handle/ClientTCPHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/ByteUtils/ByteUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/classes/ByteUtils/ByteUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/target/classes/ByteUtils/CloseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/classes/ByteUtils/CloseUtils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,35 +65,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientForceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/ServerByTCP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+            <state relative-caret-position="87">
+              <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +92,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="754">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6003">
-              <caret line="207" selection-start-line="207" selection-end-line="207" />
+            <state relative-caret-position="3804">
+              <caret line="161" column="44" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +126,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/constants/src/main/java/cons/TCPParas.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="-1747">
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,13 +174,14 @@
         <option value="$PROJECT_DIR$/utils/src/main/java/ByteUtils.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientTCP.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/ByteUtils/CloseUtils.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/clientside/Client.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/serverside/ServerProvider.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/serverside/Server.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/serverside/ServerByTCP.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/clientside/Client.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/clientside/ClientForceTest.java" />
       </list>
     </option>
   </component>
@@ -145,6 +193,12 @@
         <option name="userSettingsFile" value="C:\Users\Administrator\Documents\maven3.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
@@ -158,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +267,11 @@
             <path>
               <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,13 +315,47 @@
             </path>
             <path>
               <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChatRoomMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ByteUtils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRoomMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -270,13 +364,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/main/webapp/ClientForceTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24594992" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -295,9 +389,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.ClientForceTest">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="clientside.Client" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="clientside.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientForceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clientside.ClientForceTest" />
       <module name="client" />
       <extension name="coverage">
         <pattern>
@@ -324,8 +431,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.ClientForceTest" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +450,9 @@
       <workItem from="1562998796280" duration="1146000" />
       <workItem from="1563000022630" duration="32418000" />
       <workItem from="1563203906873" duration="2273000" />
-      <workItem from="1564052155728" duration="3810000" />
+      <workItem from="1564052155728" duration="14592000" />
+      <workItem from="1564081693582" duration="1319000" />
+      <workItem from="1564084420662" duration="3032000" />
     </task>
     <task id="LOCAL-00001" summary="聊天室案例实现，使用JAVA IO">
       <created>1563205807722</created>
@@ -358,16 +468,39 @@
       <option name="project" value="LOCAL" />
       <updated>1564068687069</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.部分注释修改">
+      <created>1564068737146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564068737146</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.部分注释修改">
+      <created>1564068870335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564068870335</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39647000" />
+    <option name="totallyTimeSpent" value="54780000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="1041" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15814793" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19061936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -377,22 +510,22 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04730473" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29592958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32893288" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32893288" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32893288" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.17161717" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.28932893" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.1771177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32952496" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -428,6 +561,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="聊天室案例实现，使用JAVA IO" />
@@ -437,24 +584,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/constants/src/main/java/UDPParas.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/constants/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/constants/src/main/java/cons/UDPParas.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -495,22 +642,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/ServerProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,10 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/Server.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/ServerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="29">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -538,18 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        <state relative-caret-position="975">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -558,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6003">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="3804">
+          <caret line="161" column="44" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -568,8 +695,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/handle/ClientTCPHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="-1747">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientByTCP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -578,8 +725,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/serverside/ServerByTCP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="87">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/clientside/ClientForceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,10 +749,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>client:jar2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24594992" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -603,10 +762,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24594992" />
               </list>
             </option>
           </splitter-proportions>
@@ -636,11 +796,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>server</last-edited>
+          <last-edited>utils</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.24594992" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -660,10 +821,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.24594992" />
               </list>
             </option>
           </splitter-proportions>
